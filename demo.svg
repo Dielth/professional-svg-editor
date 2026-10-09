@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0ea5e9"/>
+      <stop offset="0.55" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.4" r="0.75">
+      <stop offset="0" stop-color="#ffffff" stop-opacity="0.85"/>
+      <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="circleClip">
+      <circle cx="620" cy="150" r="110"/>
+    </clipPath>
+  </defs>
+
+  <rect id="fondo" x="0" y="0" width="800" height="600" fill="url(#bgGrad)"/>
+  <rect id="resplandor" x="0" y="0" width="800" height="600" fill="url(#glow)"/>
+
+  <g id="orbitas" opacity="0.9">
+    <circle cx="620" cy="150" r="150" fill="none" stroke="#ffffff" stroke-opacity="0.35" stroke-width="2"/>
+    <g clip-path="url(#circleClip)">
+      <circle cx="620" cy="150" r="110" fill="#f472b6" fill-opacity="0.85"/>
+      <circle cx="575" cy="110" r="38" fill="#fde68a"/>
+      <rect x="560" y="170" width="130" height="26" rx="13" fill="#0f172a" fill-opacity="0.55"/>
+    </g>
+  </g>
+
+  <path id="estrella" d="M 150 120 L 176 190 L 250 194 L 192 240 L 212 310 L 150 268 L 88 310 L 108 240 L 50 194 L 124 190 Z"
+        fill="#fde047" stroke="#f59e0b" stroke-width="6" stroke-linejoin="round"/>
+
+  <g id="barras">
+    <rect x="80" y="430" width="420" height="14" rx="7" fill="#ffffff" fill-opacity="0.85"/>
+    <rect x="80" y="460" width="330" height="14" rx="7" fill="#ffffff" fill-opacity="0.6"/>
+    <rect x="80" y="490" width="250" height="14" rx="7" fill="#ffffff" fill-opacity="0.4"/>
+  </g>
+
+  <text id="titulo" x="80" y="370" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="800" fill="#ffffff" letter-spacing="2">DEMO POSTER</text>
+  <text id="subtitulo" x="82" y="405" font-family="Georgia, serif" font-size="22" font-style="italic" fill="#e0e7ff">Edita este archivo: mueve, escala, rota y añade lo que quieras</text>
+
+  <g id="logo">
+    <rect x="600" y="420" width="140" height="140" rx="24" fill="#0f172a" fill-opacity="0.75"/>
+    <image href="demo-art.png" x="612" y="432" width="116" height="116" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+
+  <polygon id="triangulo" points="520,520 560,460 600,520" fill="#34d399" stroke="#065f46" stroke-width="4" stroke-linejoin="round"/>
+</svg>
